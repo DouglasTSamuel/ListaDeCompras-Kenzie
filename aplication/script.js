@@ -4,6 +4,9 @@ let ul= document.getElementById("lista");
 let items = document.getElementsByTagName("li");
 let itemButtons = document.getElementsByClassName("remove");
 let riscaItem = document.getElementsByClassName("riscaItem");
+let contadorContainer = document.getElementById("contador");
+
+contador = 0;
 
 function gerarListaNova(){
   let li = document.createElement("li");
@@ -39,6 +42,8 @@ function gerarListaNova(){
  
 function deleteItem(){
  this.parentElement.parentElement.remove();
+ contador -= 1;
+ contadorContainer.textContent = contador;
 }
 
 function buttonEvents(){
@@ -60,6 +65,8 @@ input.addEventListener('keyup', function(e){
       resultado.textContent=""
       input.style.border = "none";
       input.style.boxShadow = "none";
+      contador += 1;
+      contadorContainer.textContent = contador;
     }else if((key == 13) && (input.value=== "")){
       resultado.textContent="Campo obrigatório";
       input.style.border = "1px solid #D82E3D";
@@ -72,6 +79,8 @@ btnAdicionar.addEventListener('click', function(e){
     resultado.textContent=""
     input.style.border = "none";
     input.style.boxShadow = "none";
+    contador += 1;
+    contadorContainer.textContent = contador;
   }else{
     resultado.textContent="Campo obrigatório";
     input.style.border = "1px solid #D82E3D";
@@ -80,7 +89,8 @@ btnAdicionar.addEventListener('click', function(e){
 
 function checkItem(){
     this.parentElement.querySelector(".spanText").style.textDecoration = "line-through #D82E3D 2px";
-   this.parentElement.querySelector(".spanText").style.textTransform= "uppercase";
+    this.parentElement.querySelector(".spanText").style.textTransform= "uppercase";
+    this.parentElement.querySelector(".spanText").style.fontFamily= "Squada One";
 }
 
 buttonEvents();
