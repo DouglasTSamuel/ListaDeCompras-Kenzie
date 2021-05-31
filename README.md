@@ -20,10 +20,10 @@
  - Foi adicionado um contador para o total de itens;
 
 ### Visão Geral:
-![imagem aplicação](./assets/listaMercado.PNG)
+![imagem aplicação](./assets/aplicacao.PNG)
 
 ### Marcando item :
 ![item marcado](./assets/itensMarcados.PNG)
 
-###Deletando itens : 
+### Deletando itens : 
 ![item deletado](./assets/itemDeletado.png)
