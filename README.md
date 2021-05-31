@@ -17,5 +17,13 @@
  - Tirar a crítica quando o campo estiver preenchido;
  - Marcar item como concluido;
  - Scroll quando chegar a um determinado tamanho;
+ - Foi adicionado um contador para o total de itens;
 
-![imagemAplicação](assets/listaMercado.png)
+### Visão Geral:
+![imagem aplicação](./assets/listaMercado.PNG)
+
+### Marcando item :
+![item marcado](./assets/itensMarcados.PNG)
+
+###Deletando itens : 
+![item deletado](./assets/itemDeletado.png)
