@@ -18,4 +18,4 @@
  - Marcar item como concluido;
  - Scroll quando chegar a um determinado tamanho;
 
-![imagemAplicação](assets/listaMercado.png)
+![imagemAplicação](./assets/listaMercado.png)
